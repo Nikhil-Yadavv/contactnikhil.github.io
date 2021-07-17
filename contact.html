@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- <link rel="stylesheet" href="mata.css"> -->
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+body{
+    font-family: sans-serif;
+}
+#topheader{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* navbar css starts */
+
+.navbar{
+    width: 100%;
+    background-image: linear-gradient(to right, #5f1782, #a517ba);
+}
+.navbar h4{
+    color: white !important;
+    font-weight: 700;
+    padding: 2px 0 0 8px;
+    word-spacing: 4px;
+    font-family: 'Benne', serif;
+    justify-content: center;
+    padding-top: 16px;
+    font-size: 2rem;
+    text-shadow: 4px 4px 4px rgb(177, 248, 11);
+}
+.navbar-nav li{
+    padding: 0 4px;
+}
+.navbar-nav li a{
+    color: white !important;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 1px;
+}
+.actives, .navbar-nav li a:hover{
+    color: crimson !important;
+    background-color: rgb(252, 29, 215);
+    border-radius: 2rem;
+    /* transform: translateX(10%); */
+}
+.fa-bars{
+    color: white;
+    font-size: 30px !important;
+}
+.sub-menu-1{
+    display: none;
+}
+.navbar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color: purple;
+    border-radius: 10px;
+}
+.navbar ul li:hover .sub-menu-1 ul li{
+    border-bottom: 1px dotted white;
+    background: transparent;
+    /* justify-content: center; */
+}
+.navbar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+
+/* navar css end */
+
+/* header css end */
+
+.footersection{
+    width: 100%;
+    height: auto;
+    padding: 30px 0 20px 0;
+    margin-top: 15px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    position: relative;
+}
+.footersection p{
+    color: #fff;
+}
+.footersection li a{
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: white;
+    text-transform: capitalize;
+    margin-left: 4px;
+}
+.footersection li{
+    list-style: none;
+    padding: 4px 0 4px 0;
+}
+.footersection h3{
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 25px;
+    font-size: 1.2rem!important;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    text-align: center;
+    /* margin-right: 30px; */
+}
+.dabba{
+    color: red;
+    padding: 4px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    border-radius: 20px;
+    margin-right: 4px;
+}
+.dol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    padding-right: -10px;
+}
+.footersection li a:hover{
+    color: red;
+    transform: translateX(10%);
+}
+#myBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: #5f1782;
+    background: #00abff;
+    padding: 10px;
+    border-radius: 10px;
+}
+#myBtn:hover{
+    background: #606060;
+}
+.input-group-text{
+    color: white!important;
+    background: #5bc0de!important;
+    border-radius: 0 100px 100px 0!important;
+}
+.input-group-text:hover{
+    color: red !important;
+}
+
+/* css for social media */
+.centerdiv-2{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.centerdiv-2 a{
+    height: 100px;
+    width: 100px;
+    background-color: #f5f6fa;
+    border-radius: 50px;
+    text-align: center;
+    margin:10px;
+    line-height: 120px;
+    box-shadow: 1px 4px 2px 2px #dcdde1;
+}
+a{
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin: 10px;
+}
+a i{
+    transition: all 0.3s linear;
+}
+a:hover i{
+    transform:scale(1.4)
+}
+.fa-instagram{
+    color: #e84393;
+}
+.fa-linkedin{
+    color: #0097e6;
+}
+.fa-twitter{
+    color: rgb(47, 208, 248);
+    /* background-color: rgb(39, 131, 184); */
+    /* padding: 4px; */
+    /* border-radius: 50%; */
+}
+
+/* footer end */
+
+/* contact css start */
+
+.contact-main{
+    padding-top: 20px;
+}
+.contactusheading{
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.box-colour{
+    background-color: wheat;
+    padding: 20px;
+}
+.contactus{
+    padding-top: 20px;
+}
+
+/* contact css end */
+
+/* media query */
+
+@media (max-width: 575px) {
+   .map-contact{
+     width: 450px;
+     padding-top: 20px;
+   }
+}
+@media (max-width: 768px) and (min-width: 576px) {
+  .map-contact{
+    width: 300px;
+    height: 350px;
+  }
+}
+@media (min-width: 766px) and (max-width: 989px) {
+  .map-contact{
+    width: 350px;
+  }
+}
+  </style>
+</head>
+</head>
+<body>
+     <!-- header start -->
+
+    <div class="header" id="topheader">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"> <h4 class="animate__animated animate__bounce">तमसो मां ज्योतिर्गमय</h4> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="mata.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="admission.html">ADMISSION</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PROSPECTUS  <i class="fa fa-caret-down" ></i> </a>
+                  <div class="sub-menu-1">
+                    <ul>
+                      <li><a href="fees.html">Fees Rules</a></li>
+                      <li><a href="library.html">Library Rules</a></li>
+                      <li><a href="uniform.html">School Uniform</a></li>
+                      <li><a href="rules.html">Rules & Regulation</a></li>
+                      <!-- <li><a href="#">Computer Lab Rule</a></li> -->
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="facility.html">FACILITY</a>
+                </li>
+                  <li class="nav-item">
+                  <a class="nav-link actives" href="#">CONTACT</a>
+                </li>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="map.html">MAP</a>
+            </li>
+               </ul>
+            </div>
+          </nav>
+      </div>
+
+  <!-- header end -->
+
+<!-- Contact Start -->
+
+<section class="contact-main">
+  <div class="container">
+    <div class="row">
+         <div class="col-lg-6 col-md-6 col-sm-6 col-10 offset-sm-0 offset-lg-0 offset-md-0 offset-1">
+          <h3 class="contactusheading">CONTACT US</h3>
+          <div class="box-colour">
+              <p>Mobile:- 8543049887</p>
+              <p>Email:- nikhil23042001@gmail.com</p>
+             <p> Vill:- Lalanpur, <br>Post:- Maharajganj, <br>Block:- Karanda, <br>Dist:-Ghazipur(233001). <br>State:- Uttar Pradesh(UP 61).</p>
+           </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-10 offset-sm-0 offset-lg-0 offset-md-0 offset-1">
+            <iframe class="map-contact" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3599.005475480303!2d83.4963194!3d25.5714846!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3991fd0c36203723%3A0x40c96daaac926204!2sMATA%20LAXMINA%20DEVI%20INTER%20COLLEGE!5e0!3m2!1sen!2sin!4v1625291835424!5m2!1sen!2sin" width="570" height="297" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+         </div>
+       </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="contactus" id="contactid">
+  <div class="container heading text-center">
+    <h1 class="text-center">CONTACT US</h1>
+    <p class="text-capitalize pb-4">🙃We are here To Help and Answer Any Question that you might Have.We look forward To Hearing from you.🙃</p>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-8 col-10 offset-sm-2 offset-lg-2 offset-md-2 offset-1">
+        <form action="/action_page.php" method="post">
+          <div class="form-group">
+            <input type="text" class="form-control" name="name" required placeholder="Enter Your Name" id="username">
+          </div>
+
+          <!-- <form action="/action_page.php"> -->
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" placeholder="Enter Your Email" id="email">
+            </div>
+
+
+          <!-- <form action="/action_page.php"> -->
+            <div class="form-group">
+              <input type="number" class="form-control" name="number" required placeholder="Enter Your Mobile Number" id="mobile">
+            </div>
+
+              <div class="form-group">
+                <textarea class="form-control" rows="4" name="comment" placeholder="Enter Your Message" id="comment"></textarea>
+              </div>
+
+              <div class="d-flex justify-content-center form-button">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+ </section>
+
+
+
+
+
+
+
+<!-- Contact end -->
+
+  <!-- footer start -->
+
+  <footer class="footersection" id="footerdiv">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12 footer-div">
+          <h3 class="pahuc">CONTACT US</h3>
+          
+         
+            <div class="row">
+              <div class="col-lg-2 col-2 service-icons">
+                <i class="fa-2x fa fa-phone dol" aria-hidden="true"></i>
+              </div>
+              <div class="col-lg-10 col-10">
+                <p>Mobile:- <br>8543049887</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-2 col-2 service-icons">
+                <i class="fa-2x fa fa-envelope-o dol" aria-hidden="true"></i>
+              </div>
+              <div class="col-lg-10 col-10">
+                <p>Email:- <br>mldicgzp@gmail.com</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-2 col-2 service-icons">
+                <i class="fa-2x fa fa-map-marker dol" aria-hidden="true"></i>
+              </div>
+              <div class="col-lg-10 col-10">
+                <p>Address:- <br> Lalanpur,Ghazipur,UP.</p>
+              </div>
+            </div>
+           
+          
+        </div>
+  
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12 footer-div text-center">
+          <h3>QUICK LINKS</h3>
+          <li><a href="mata.html"><i class="fa fa-home dabba"></i>Home</a></li>
+          <li><a href="gallery.html"><i class="fa fa-clone dabba"></i>Gallery</a></li>
+          <!-- <li><a href="#"><i class="fa fa-ravelry dabba"></i>Courses</a></li> -->
+          <li><a href="admission.html"><i class="fa fa-handshake-o dabba"></i>Admission</a></li>
+          <!-- <li><a href="#about_school"><i class="fa fa-wpexplorer dabba"></i>About</a></li> -->
+          <li><a href="map.html"><i class="fa fa-map-marker dabba"></i>Location</a></li>
+        </div>
+     
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12 footer-div">
+        <h3>GET IN TOUCH</h3>
+        <p>For business profession contact us directly by writing your Message.</p>
+        <div class="container newsletter-main">
+          <div class="row">
+            <div class="col-lg-12 col-12"></div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control news-input" placeholder="Your Message">
+              <div class="input-group-append">
+                <span class="input-group-text">Subscribe</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="centerdiv-2">
+      <a href="https://www.facebook.com/mldic/" target="_blank">
+          <i class="fa-2x fa fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/mldic?r=nametag" target="_blank">
+          <i class="fa-2x fa fa-instagram"></i>
+      </a>
+      <a href="https://twitter.com/mata_inter?s=08" target="_blank">
+        <i class="fa-2x fa fa-twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/nikhil-yadav-0b7027215" target="_blank">
+          <i class="fa-2x fa fa-linkedin"></i>
+      </a>
+  </div>
+  
+  
+    <div class="mt-5 text-center">
+      <p>Copyright © 2021 Mata Laxmina Devi Inter College, Ghazipur. All rights reserved. | This template is made with Love and Hard Work by NIKHIL. </p>
+    </div>
+   </div>
+  
+  
+  </footer>
+  
+
+  <!-- footer end -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
